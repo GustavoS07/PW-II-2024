@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style/menu.css">
+</head>
+<body>
+  <div class="menu">
+    <div class="secao">
+      <h2>Livros</h2>
+      <form action="AcessoBD/ListarLivro.php" method="post">
+        <input type="hidden" name="action" value="listar">
+        <input type="submit" value="Listar Livros" class="botao">
+      </form>
+      <form action="AcessoBD/CadastrarLivro.php" method="post">
+        <input type="hidden" name="action" value="cadastrar">
+        <input type="submit" value="Cadastrar Livro" class="botao">
+      </form>
+      <form action="AcessoBD/ExcluirLivro.php" method="post">
+        <input type="hidden" name="action" value="excluir">
+        <input type="submit" value="Excluir Livro" class="botao">
+      </form>
+      <form action="AcessoBD/PesquisarLivro.php" method="post">
+        <input type="hidden" name="action" value="pesquisar">
+        <input type="submit" value="Pesquisar Livro" class="botao">
+      </form>
+      <form action="AcessoBD/alterarLivro.php" method="post">
+        <input type="hidden" name="action" value="alterar">
+        <input type="submit" value="Alterar Livro" class="botao">
+      </form>
+    </div>
+    <div class="secao">
+      <h2>Autores</h2>
+      <form action="AcessoBD/ListarAutor.php" method="post">
+        <input type="hidden" name="action" value="listar">
+        <input type="submit" value="Listar Autores" class="botao">
+      </form>
+      <form action="AcessoBD/CadastrarAutor.php" method="post">
+        <input type="hidden" name="action" value="cadastrar">
+        <input type="submit" value="Cadastrar Autor" class="botao">
+      </form>
+      <form action="AcessoBD/ExcluirAutor.php" method="post">
+        <input type="hidden" name="action" value="excluir">
+        <input type="submit" value="Excluir Autor" class="botao">
+      </form>
+      <form action="AcessoBD/PesquisarAutor.php" method="post">
+        <input type="hidden" name="action" value="pesquisar">
+        <input type="submit" value="Pesquisar Autor" class="botao">
+      </form>
+      <form action="AcessoBD/alterarAutor.php" method="post">
+        <input type="hidden" name="action" value="alterar">
+        <input type="submit" value="Alterar Autor" class="botao">
+      </form>
+    </div>
+    <div class="secao">
+      <h2>Autoria</h2>
+      <form action="AcessoBD/ListarAutoria.php" method="post">
+        <input type="hidden" name="action" value="listar">
+        <input type="submit" value="Listar Autoria" class="botao">
+      </form>
+      <form action="AcessoBD/CadastrarAutoria.php" method="post">
+        <input type="hidden" name="action" value="cadastrar">
+        <input type="submit" value="Cadastrar Autoria" class="botao">
+      </form>
+      <form action="AcessoBD/ExcluirAutoria.php" method="post">
+        <input type="hidden" name="action" value="excluir">
+        <input type="submit" value="Excluir Autoria" class="botao">
+      </form>
+      <form action="AcessoBD/PesquisarAutoria.php" method="post">
+        <input type="hidden" name="action" value="pesquisar">
+        <input type="submit" value="Pesquisar Autoria" class="botao">
+      </form>
+      <form action="AcessoBD/alterarAutoria.php" method="post">
+        <input type="hidden" name="action" value="alterar">
+        <input type="submit" value="Alterar Autoria" class="botao">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

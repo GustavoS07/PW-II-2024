@@ -1,0 +1,68 @@
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+
+fieldset {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px 0;
+  width: 80%;
+}
+
+legend {
+  font-weight: bold;
+  color: #009879;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #009879;
+}
+
+
+input[type="text"] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #009879;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #007d66;
+}
+
+a {
+  text-decoration: none;
+  color: #009879;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}

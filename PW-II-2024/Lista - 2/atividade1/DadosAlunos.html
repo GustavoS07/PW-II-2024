@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro dos alunos</title>
+</head>
+<body>
+    <form name="form1" action="dadosalunos.php" method="POST">
+        <fieldset style="width: 40%">
+            <legend>
+                Dados pessoais  
+            </legend>
+            Nome <input type="text" name="txtnome" size="50"><br>
+            telefone <input type="text" name="txttelefone" size="20" maxlength="14"><br>
+            RG <input type="text" name="txtRG" size="14" maxlength="15" >
+        </fieldset><br>
+
+        <fieldset style="width: 40%">
+            <legend>
+                Opções
+            </legend>
+            <input type="submit" value="confirmar">
+            <input type="reset" value="limpar">
+        </fieldset><br>
+
+        <fieldset style="width: 40%">
+            <legend>
+                Dados escolares
+            </legend>
+            Curso <select name="cbocursos">
+                <option value="informatica">Informatica
+                <option value="administração">administração
+                <option value="Enfermagem">Enfermagem
+                <option value="Alimentos">Alimentos 
+            </select>   <br>
+            Módulo<input type="text" name="txtmodulo" size="10">
+        </fieldset>
+    </form>
+</body>
+</html>

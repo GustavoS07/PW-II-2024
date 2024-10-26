@@ -42,7 +42,7 @@
     </table>
 
     <br><br>
-    <a href="../index.html">Voltar</a>
+    <a href="../menu.html">Voltar</a>
 
 </body>
 </html>

@@ -45,6 +45,6 @@
 
         </fieldset>
     </form>
-    <center> <br><br><br><br><br><a href='../index.html' class='botao'>Voltar</a>
+    <center> <br><br><br><br><br><a href='../menu.html' class='botao'>Voltar</a>
 </body>
 </html>

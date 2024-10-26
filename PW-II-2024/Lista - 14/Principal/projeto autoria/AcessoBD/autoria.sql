@@ -1,13 +1,28 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 26/10/2024 às 01:54
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
 -- Banco de dados: `bd_autoria`
 --
 
 -- --------------------------------------------------------
-CREATE DATABASE `bd_autoria`;
-USE `bd_autoria`;
+
 --
 -- Estrutura para tabela `autor`
 --
@@ -18,7 +33,7 @@ CREATE TABLE `autor` (
   `SobreNome` varchar(30) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Nasc` date NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `autor`
@@ -44,7 +59,7 @@ CREATE TABLE `autoria` (
   `Cod_livro` int(11) NOT NULL,
   `Data_lancamento` date NOT NULL,
   `Editora` varchar(30) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `autoria`
@@ -73,7 +88,7 @@ CREATE TABLE `livro` (
   `ISBN` varchar(13) NOT NULL,
   `Idioma` varchar(20) NOT NULL,
   `QtdePag` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `livro`
@@ -85,6 +100,25 @@ INSERT INTO `livro` (`Cod_livro`, `Titulo`, `Categoria`, `ISBN`, `Idioma`, `Qtde
 (3, 'O Grande Gatsby', 'Romance', '9780743273565', 'Português', 180),
 (4, 'A Casa dos Espíritos', 'Ficção Histórica', '9788401013883', 'Português', 448),
 (5, 'Americanah', 'Ficção', '9780307271082', 'Português', 588);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `usuario` varchar(20) NOT NULL,
+  `senha` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`usuario`, `senha`) VALUES
+('Guto', 1234),
+('Edna', 4321);
 
 --
 -- Índices para tabelas despejadas
@@ -118,3 +152,7 @@ ALTER TABLE `autor`
 ALTER TABLE `livro`
   MODIFY `Cod_livro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

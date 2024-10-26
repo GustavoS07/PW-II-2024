@@ -31,7 +31,7 @@
                 }
             ?>
         </fieldset>
-        <a href="../index.html">Voltar</a>
+        <a href="../menu.html">Voltar</a>
     </div>
 </body>
 </html>

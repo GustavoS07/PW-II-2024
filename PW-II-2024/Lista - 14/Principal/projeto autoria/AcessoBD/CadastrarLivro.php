@@ -32,7 +32,7 @@
         }
         ?>
         <div class="button-container">
-            <button><a href="../index.html"> Voltar </a></button>
+            <button><a href="../menu.html"> Voltar </a></button>
         </div>
     </form>
 </body>

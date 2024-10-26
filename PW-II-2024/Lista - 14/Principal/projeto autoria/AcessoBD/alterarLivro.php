@@ -20,7 +20,7 @@
     </form>
     <center>
         <br><br><br><br><br>
-        <a href='../index.html' class='botao'>Voltar</a>
+        <a href='../menu.html' class='botao'>Voltar</a>
     </center>
 </body>
 </html>
